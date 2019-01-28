@@ -4,7 +4,7 @@
   "description": "A Node and React Webpack Hyperchain Carlo GUI",
   "repository": "laggingreflex/anarchic-gui",
   "dependencies": {
-    "carlo-webpack": "^0.0.0",
+    "carlo-webpack": "^0.1.0",
     "hyperchain": "^0.14.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
