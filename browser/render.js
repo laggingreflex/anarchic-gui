@@ -1,6 +1,6 @@
 const { render } = require('react-dom');
 const { h } = require('.');
-const target = document.getElementById('app') || document.body;
+const target = document.getElementById('app') || (document.body.appendChild(document.createElement('div')));
 
 /**
  * @param app
