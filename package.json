@@ -1,6 +1,6 @@
 {
   "name": "anarchic-gui",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "A Node and React Webpack Hyperchain Carlo GUI",
   "repository": "laggingreflex/anarchic-gui",
   "dependencies": {
