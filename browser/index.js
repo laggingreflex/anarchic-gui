@@ -1,4 +1,5 @@
 const { createElement } = require('react');
+const HOpts = exports.HOpts = require('hyperchain/opts');
 const H = exports.H = require('hyperchain/react');
 const h = exports.h = H();
 const HText = exports.HText = require('hyperchain/text');
