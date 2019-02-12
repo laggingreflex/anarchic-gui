@@ -5,6 +5,7 @@ module.exports = async (opts) => {
   opts = opts || {};
   opts.browser = opts.browser || {};
   const config = webpackConfig({
+    dev: opts.dev,
     entry: opts.browser.entry,
     globals: opts.browser.globals,
     ...opts.webpack,
