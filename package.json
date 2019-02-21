@@ -1,6 +1,6 @@
 {
   "name": "anarchic-gui",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "A Node and React Webpack Hyperchain Carlo GUI",
   "main": "index.js",
   "browser": "browser/index.js",
