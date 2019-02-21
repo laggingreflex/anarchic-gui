@@ -22,6 +22,11 @@ module.exports = (...opts) => {
     ...opts.output,
   };
 
+  if (opts.target) config.target = opts.target;
+  if (opts.node) config.node = opts.node;
+  if (opts.mode) config.mode = opts.mode;
+  if (opts.dev && !config.mode) config.mode = 'development';
+
   const { rules } = config.module = { rules: [] };
   const plugins = config.plugins = [];
 

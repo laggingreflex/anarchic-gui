@@ -20,11 +20,13 @@ app
 
   ```js
   const GUI = require('anarchic-gui/node')
-  GUI({
-    browser: {
-      entry: require.resolve('./browser')
-    }
+  const { runDevServer, build, launch } = GUI({
+    browser: require.resolve('./browser')
   })
+  await build() // OR
+  await runDevServer()
+  // then
+  launch()
   ```
 
 * **`browser.js`**
@@ -46,10 +48,10 @@ node node.js
 
 ```js
 const GUI = require('anarchic-gui/node')
-const app = await GUI(opts)
+const {...} = GUI(opts)
 ```
 
-* **`app`** Result of Carlo's [carlo.launch]
+* **`{...}`** Result of Carlo's [carlo-webpack]
 * **`opts`**
 
   * **`browser`**
@@ -92,6 +94,7 @@ const { createElement } = require('anarchic-gui/browser')
 [react]: http://reactjs.org
 [webpack]: http://webpack.js.org
 [hyperchain]: https://github.com/laggingreflex/hyperchain
+[carlo-webpack]: https://github.com/laggingreflex/carlo-webpack
 [carlo]: https://github.com/GoogleChromeLabs/carlo
 [carlo.launch]: https://github.com/GoogleChromeLabs/carlo/blob/master/API.md#carlolaunchoptions
 [entry file]: https://webpack.js.org/concepts/#entry
